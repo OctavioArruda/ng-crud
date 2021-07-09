@@ -22,4 +22,19 @@ export class ProductReadComponent implements OnInit {
       this.products = products;
     });
   }
+
+  deleteProduct(id: string): void {
+    if (id) {
+      this.productService.delete(id).subscribe(() => {
+        this.productService.showMessage(
+          'Product deleted with success'
+        );
+        this.productService.navigateToProductsPage();
+      });
+
+      return;
+    }
+
+    console.error('Fatal error');
+  }
 }

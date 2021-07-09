@@ -42,6 +42,12 @@ export class ProductService {
     );
   }
 
+  delete(id: string): Observable<Product> {
+    return this.http.delete<Product>(
+      `${this.baseUrl}/${id}`
+    );
+  }
+
   navigateToProductsPage(): void {
     this.router.navigate(['/products']);
   }
