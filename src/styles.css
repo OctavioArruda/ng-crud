@@ -10,7 +10,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
 .red-highlight {
@@ -19,4 +19,14 @@ body {
 
 .v-middle {
   vertical-align: middle;
+}
+
+.success-message {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.error-message {
+  background-color: var(--main-red);
+  color: #fff;
 }

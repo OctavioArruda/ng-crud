@@ -35,7 +35,7 @@
         <a routerLink="/products/update/{{ row.id }}">
           <i class="material-icons edit">edit</i>
         </a>
-        <a (click)="deleteProduct(row.id)">
+        <a routerLink="/products/delete/{{ row.id }}">
           <i class="material-icons delete">delete</i>
         </a>
       </td>
